@@ -1,0 +1,51 @@
+//conexao.php
+<?php
+$host="localhost";
+$user="root";
+$pass="";
+$banco="dadosclientes";
+$conexao=mysqli_connect($host, $user, $pass,
+    $banco) or die(mysql_error());
+    mysqli_select_db($banco) or die(mysql_error());
+    ?>
+
+//login.php
+<html>
+<head>
+<title> Login </title>
+</head>
+<body>
+<h1>Login do Sistema</h1>
+<form method="post" action="ValidarLogin.php">
+ <table>
+ <tr>
+ <td>Usuario:</td>
+<td><input name="user" type="text"></td>
+</tr>
+<tr>
+<td>Senha:</td>
+<td><input name="senha" type="password"></td>
+</tr>
+ </table>
+ <br>
+ <button type="submit" name="enviar"> Logar </button>
+</form>
+</body>
+</html>
+
+ //validarlogin.php
+<html>
+<head>
+<title> Validar Login </title>
+</head>
+<body>
+<?php
+include "Conexao.php";
+$user=$_POST['user'];
+$senha=$_POST['senha'];
+$selbanco = mysqli_query($conexao,"SELECT * FROM
+dadosclientes WHERE nome='$user' AND cpf='$senha'");
+?>
+</body>
+</html>
+

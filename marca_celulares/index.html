@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja de celulares</title>
+    <style>
+        .container {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(255, 255, 255);
+            padding-left: 5px;
+            margin-top: 10%;
+            margin-left: 10%;
+            display: inline-block;
+            position: relative;
+        }
+        .container img {
+            width: 120;
+            height: 120px;
+            object-fit: cover;
+        }
+        #menu {
+            position: absolute;
+            margin-left: 32%;
+            margin-right: auto;
+            top: 0;
+            width: 50%;
+            font-family: arial;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+        }
+        #menu ul {
+            display: flex;
+            height: 30px;
+            list-style-type: none;
+            padding: 0;
+        }
+        #menu li {
+            width: 40px;
+            height: 10px;
+            text-align: left;
+            padding: 30px;
+            transition: 1s background-color;
+            background-color: rgb(4, 0, 250);
+            margin: 5px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+        #menu a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        #menu li:hover {
+            transition: 1s background-color;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="menu"><ul><a href="index.html"><li>inicio</li></a><a href="iphone.html"><li>iphone</li></a><a href="motorola.html"><li>motorola</li></a><a href="xaiome.html"><li>xiaomi</li></a></ul></div>
+    <div class="container"><p style="text-align: center;font-family: Arial;"><h2>iphone</h2></p><a href="iphone.html"><img src="imagens/747.png"></a></div>
+    <div class="container"><p style="text-align: center; font-family: Arial;"><h2>motorola</h2></p><a href="motorola.html"><img src="imagens/motorola_logo.png"></a></div>
+    <div class="container"><p style="text-align: center;font-family: Arial;"><h2>xiaomi</h2></p><a href="xaiome.html"><img src="imagens/xiaomi_logo.png"></a></div>
+</body>
+</html>

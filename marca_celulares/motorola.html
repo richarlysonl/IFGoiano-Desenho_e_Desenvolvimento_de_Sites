@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>motorola</title>
+    <link rel="icon" href="imagens//motorola_logo.png">
+    <style>
+        #menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-family: arial;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+        }
+        #menu ul {
+            display: flex;
+            height: 30px;
+            list-style-type: none;
+            padding: 0;
+        }
+        #menu li {
+            width: 40px;
+            height: 10px;
+            text-align: left;
+            padding: 30px;
+            transition: 1s background-color;
+            background-color: rgb(4, 0, 250);
+            margin: 5px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+        #menu a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        #menu li:hover {
+            transition: 1s background-color;
+            background-color: rgb(255, 0, 0);
+        }
+        #main {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 100%;
+        }
+        .produtos{
+            width: 10%;
+            height: 10%;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            margin-left: 15%;
+            left: 5%;
+            display: inline-block;
+            position: flex;
+            text-align: center;
+        }
+        .produtos img{
+            width: 130px;
+            height: 170px;
+            object-fit: cover;
+        }
+        .produtos p{
+            font-family: arial;
+            padding: 10px;
+            background-color: rgb(158, 149, 139);
+            display: inline-block;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id="menu"><ul><a href="index.html"><li>inicio</li></a><a href="iphone.html"><li>iphone</li></a><a href="motorola.html"><li>motorola</li></a><a href="xaiome.html"><li>xiaomi</li></a></ul></div>
+    <figure>
+    <img src="imagens/motorola_logo.png" alt="motorola" style="width: 110px; height: 100px; object-fit: cover; margin-top: 0px; margin-left: 92%;">
+    </figure>
+    <h1 style="text-align: center; font-family: arial;">Motorola</h1>
+    <div class="produtos"><p>motorola edge 50<a href="https://www.motorola.com.br/smartphone-motorola-edge-50/p?idsku=1585&gad_source=1&gclid=CjwKCAjwq7fABhB2EiwAwk-YbLwLAD2DIjMVYkKIpPmzW0oHJI-_LrsCdpcnAmMJntsJy8LGbD45wxoC1PkQAvD_BwE"><img src="imagens/edge50.png"></a></p></div>
+    <div class="produtos"><p>motorola g54<a href="https://www.amazon.com.br/Smartphone-Moto-G54-256GB-Verde/dp/B0CGVXGT76/ref=asc_df_B0CGVXGT76?mcid=af16c7d66a7038fbb96717374a4dd7da&tag=googleshopp00-20&linkCode=df0&hvadid=709964503151&hvpos=&hvnetw=g&hvrand=11973479940749643056&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9220648&hvtargid=pla-2246225048375&psc=1&language=pt_BR&gad_source=1"><img src="imagens/g54.jpg"></a></p></div>
+    <div class="produtos"><p>iphone g84<a href="https://www.amazon.com.br/Smartphone-Moto-G84-256GB-Grafite/dp/B0CGVYYF4K/ref=asc_df_B0CGVYYF4K?mcid=abf8f8898a6e37d09619ac0aaa8acdfe&tag=googleshopp00-20&linkCode=df0&hvadid=709964503151&hvpos=&hvnetw=g&hvrand=11973479940749643056&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9220648&hvtargid=pla-2248457612097&language=pt_BR&gad_source=1&th=1"><img src="imagens/g84.jpg"></a></p></div>
+</div>
+</body>
+</html>
