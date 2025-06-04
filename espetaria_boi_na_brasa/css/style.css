@@ -1,0 +1,269 @@
+
+* {
+  margin: 0;
+  padding: 0; /* concertar o problema de margin */
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(57, 66, 66, 0.719);
+    font-family: arial;
+}
+#conteudo {
+    margin: 0;
+    margin-left: 60px; 
+    width: 96%;
+    height: 400px;
+}
+#conteudo a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    background-color: #2e2d2d;
+    border-radius: 5px;
+}
+#conteudo a:hover {
+    background-color: #131212;
+}
+/* cabeçalho */
+#cabecalho {
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(32, 34, 34);
+}
+#cabecalho h2{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(177, 15, 15);
+    font-family: 'Courier New';
+}
+#cabecalho img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+/* Estilo do menu de navegação */
+.side-menu {
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 60px; /* largura inicial pequena */
+    background-color: rgb(32, 34, 34);
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+     /* corrige a sobreposição do elemento */
+}
+
+/* Expandir ao passar o mouse */
+.side-menu:hover {
+    width: 200px;
+}
+
+/* Lista do menu */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens */
+.side-menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.side-menu ul li a:hover {
+    background-color: #555;
+}
+
+
+#localizacao {
+    position: relative;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 350px;
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#localizacao iframe {
+    width: 350px;
+    height: 350px;
+}
+
+#cardapio_article {
+    height: 170px;
+    width: 100%;
+    display: block;
+    left: 100px;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+#cardapio_article section {
+    padding: 20px;
+    padding-left: 7%;
+    width: 15%;
+    height: 150px;
+    float: left;
+}
+#cardapio_article section ul{
+    list-style: circle;
+}
+
+#cardapio_article img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+#mais {
+    height: 40px;
+    width: 200px;
+    left: 0;
+}
+footer {
+    bottom: -5%;
+    padding-top: 10px;
+    background-color: rgb(32, 34, 34);
+    margin-left: 60px;
+    display: block;
+    height: 80px;
+    width: 100%;
+    padding-left: 60px;
+    color: rgb(177, 15, 15);;
+}
+
+footer section {
+    float: left;
+    top: 0;
+    height: 60px;
+    width: 48%;
+    
+}
+footer address {
+    float: left;
+    top: 0;
+    height: 100%;
+    width: 48%;
+}
+footer address a {
+    color: rgb(177, 15, 15);
+}
+footer img{
+    float: left;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+#complemento{
+    height: 500px;
+    width: 95%;
+    display: block;
+    left: 100px;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+/* cardapio.html */
+#cardapio {
+    padding: 0;
+    margin: 0;
+    margin-left: 60px; 
+    width: 96%;
+    height: 1000px;
+}
+#cardapio a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    background-color: #2e2d2d;
+    border-radius: 5px;
+}
+#cardapio header img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+#cardapio a:hover {
+    background-color: #131212;
+}
+.comidas {
+    width: 100%;
+    height: 300px;
+    display: block;
+    padding-top: 0px;
+    float: left;
+}
+.comidas img {
+    width: 170px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.comidas div {
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+    padding-left: 15px;
+}
+.comidas div p {
+    float: left;
+    width: 100%;
+}
+/* sobrenos.html */
+#cont {
+    padding: 0;
+    margin: 0;
+    margin-left: 60px; 
+    width: 96%;
+    height: 100%;
+}
+#sobreNos {
+    width: 95%;
+    height: 500px;
+    display: block;
+    left: 100px;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+#sobreNos img {
+    padding-left: 40%;
+    width: 150px;
+    height: 300px;
+}
+#galeria {
+    width: 45%;
+    height:100%;
+    display: block;
+    left: 100px;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+#galeria div {
+    display: block;
+    padding: 10px;
+    padding-top: 8%;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+}
